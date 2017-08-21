@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_gonglue_tab1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_launcher"
+                android:gravity="center"
+                android:text="@string/gonglue_text1"
+                android:textColor="@color/black_translucent_b"
+                android:textSize="@dimen/textSize7" />
+
+            <TextView
+                android:id="@+id/tv_gonglue_tab2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_launcher"
+                android:gravity="center"
+                android:text="@string/gonglue_text2"
+                android:textColor="@color/black_translucent_b"
+                android:textSize="@dimen/textSize7" />
+
+            <TextView
+                android:id="@+id/tv_gonglue_tab3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_launcher"
+                android:gravity="center"
+                android:text="@string/gonglue_text3"
+                android:textColor="@color/black_translucent_b"
+                android:textSize="@dimen/textSize7" />
+
+            <TextView
+                android:id="@+id/tv_gonglue_tab4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_launcher"
+                android:gravity="center"
+                android:text="@string/gonglue_text4"
+                android:textColor="@color/black_translucent_b"
+                android:textSize="@dimen/textSize7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_gonglue_pic1"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/dog" />
+
+            <ImageView
+                android:id="@+id/iv_gonglue_pic2"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/dog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gonglue_text5"
+                android:textColor="@color/black_translucent_b"
+                android:textSize="@dimen/textSize5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/gonglue_text6"
+                android:textColor="@color/black_translucent_7"
+                android:textSize="@dimen/textSize7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_gonglue_pic3"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dog" />
+
+                <ImageView
+                    android:id="@+id/iv_gonglue_pic4"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dog" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

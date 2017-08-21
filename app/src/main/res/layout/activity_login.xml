@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan500"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="24dp" >
+
+    <ImageView
+        android:id="@+id/iv_login_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_et1"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            style="@style/style_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/acount"
+            android:drawablePadding="10dp"
+            android:hint="@string/account"
+            android:inputType="text"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_et1"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_login_password"
+            style="@style/style_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_change_phone_getCode"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_next"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn1"
+        android:text="@string/login"
+        android:textSize="@dimen/textSize4" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/tv_login_quickSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/quick_signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize7" />
+
+        <TextView
+            android:id="@+id/tv_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/forget_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize7" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="———————— 其他方式登录 ————————"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp" >
+
+        <ImageView
+            android:id="@+id/iv_login_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/sina" />
+
+        <ImageView
+            android:id="@+id/iv_login_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/alipay2" />
+
+        <ImageView
+            android:id="@+id/iv_login_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wechat2" />
+    </RelativeLayout>
+
+</LinearLayout>

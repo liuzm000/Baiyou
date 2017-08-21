@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <EditText
+        android:id="@+id/et_create_team_teamName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/createteam_text1"
+        android:lines="1"
+        android:padding="10dp"
+        android:textSize="@dimen/textSize6" />
+
+    <View style="@style/style_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/et_create_team_teamInfomation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/create_team_text2"
+            android:minLines="6"
+            android:textSize="@dimen/textSize6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="0/200"
+            android:textColor="@color/black_translucent_7"
+            android:textSize="@dimen/textSize7" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/fee"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize6" />
+
+        <TextView
+            android:id="@+id/tv_create_team_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="费用"
+            android:textColor="@color/black_translucent_7"
+            android:textSize="@dimen/textSize7" />
+    </FrameLayout>
+
+    <View style="@style/style_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/time"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize6" />
+
+        <TextView
+            android:id="@+id/tv_create_team_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:text="2017/7/18"
+            android:textColor="@color/black_translucent_7"
+            android:textSize="@dimen/textSize7" />
+    </FrameLayout>
+
+    <View style="@style/style_line" />
+
+    <FrameLayout
+        android:id="@+id/root_create_team_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/location"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize6" />
+
+        <TextView
+            android:id="@+id/tv_createTeam_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:text="选择地点"
+            android:textColor="@color/black_translucent_7"
+            android:textSize="@dimen/textSize7" />
+    </FrameLayout>
+
+    <View style="@style/style_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="群申请验证"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize6" />
+
+        <Switch
+            android:id="@+id/sw_create_team_isApplyVertify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_create_team_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn3"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize5" />
+    </FrameLayout>
+
+</LinearLayout>

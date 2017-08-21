@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="16dp" 
+    android:id="@+id/root_item_together"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/tv_item_together_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize7" />
+
+    <TextView
+        android:id="@+id/tv_item_together_destination"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize7" />
+
+    <TextView
+        android:id="@+id/tv_item_together_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize7" />
+
+    <TextView
+        android:id="@+id/tv_item_together_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize7" />
+
+</LinearLayout>

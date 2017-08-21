@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title"/>
+    
+    <Button
+        android:id="@+id/btn_net_check_check"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/bg_btn5"
+        android:text="@string/net_check"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize4" />
+
+</LinearLayout>

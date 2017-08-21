@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complaint_text1"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize5" />
+
+        <EditText
+            android:id="@+id/et_complaint_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_et2"
+            android:gravity="top|left"
+            android:hint="@string/complaint_text2"
+            android:minLines="6"
+            android:padding="5dp"
+            android:textColor="@color/black_translucent_b"
+            android:textColorHint="@color/black_translucent_7"
+            android:textSize="@dimen/textSize8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complaint_text3"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize5" />
+
+        <ImageView
+            android:id="@+id/iv_complaint_proof"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/upload_complaint" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/btn_complaint_commit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="56dp"
+            android:background="@drawable/bg_btn3"
+            android:text="@string/commit_complaint" />
+
+    </FrameLayout>
+
+</LinearLayout>

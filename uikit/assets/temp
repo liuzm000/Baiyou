@@ -1,0 +1,4 @@
+Error:Execution failed for task ':app:transformResourcesWithMergeJavaResForDebug'.
+> com.android.build.api.transform.TransformException: com.android.builder.packaging.DuplicateFileException: Duplicate files copied in APK assets/nim_keystore
+  	File1: /Users/liuzhimin/.android/build-cache/1944e304e4f2f91bb2c07a0ac84862754ade8b94/output/jars/classes.jar
+  	File2: /Users/liuzhimin/Downloads/Baiyou/uikit/build/intermediates/bundles/default/classes.jar

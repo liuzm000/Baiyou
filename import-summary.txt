@@ -1,0 +1,109 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* AndroidManifest.xml
+* proguard-project.txt
+* res/
+* res/drawable-hdpi/
+* res/drawable-hdpi/ic_launcher.png
+* res/drawable-mdpi/
+* res/drawable-mdpi/ic_launcher.png
+* res/drawable-xhdpi/
+* res/drawable-xhdpi/ic_launcher.png
+* res/drawable/
+* res/drawable/gridview_item.xml
+* res/drawable/gridview_item_default.xml
+* res/drawable/input_bg.xml
+* res/drawable/item.xml
+* res/drawable/item_default.xml
+* res/drawable/org_loading.xml
+* res/layout/
+* res/layout/common_list.xml
+* res/layout/org_layout_loading.xml
+* res/layout/org_layout_loading2.xml
+* res/layout/test.xml
+* res/values-v11/
+* res/values-v11/styles.xml
+* res/values-v14/
+* res/values-v14/styles.xml
+* res/values/
+* res/values/attrs.xml
+* res/values/org_color.xml
+* res/values/org_ids.xml
+* res/values/org_strings.xml
+* res/values/org_styles.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:25.+
+gson-2.2.1.jar => com.google.code.gson:gson:2.2.1
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.1.jar => version 2.2.1 in com.google.code.gson:gson:2.2.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* libs/com.springsource.org.apache.commons.httpclient-3.1.0.jar => http/libs/com.springsource.org.apache.commons.httpclient-3.1.0.jar
+* libs/commons-codec-1.9.jar => http/libs/commons-codec-1.9.jar
+* libs/commons-io-1.3.2.jar => http/libs/commons-io-1.3.2.jar
+* libs/commons-logging-1.2.jar => http/libs/commons-logging-1.2.jar
+* libs/httpmime-4.1.3.jar => http/libs/httpmime-4.1.3.jar
+* libs/photoview.jar => http/libs/photoview.jar
+* libs/picasso-2.3.4.jar => http/libs/picasso-2.3.4.jar
+* libs/v4.jar => http/libs/v4.jar
+* src/ => http/src/main/java/
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

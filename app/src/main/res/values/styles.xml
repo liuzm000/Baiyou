@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.NoActionBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="style_editText1">
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/textSize4</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="style_editText2">
+        <item name="android:background">@null</item>
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/textSize6</item>
+        <item name="android:textColor">@color/black_translucent_b</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="style_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="style_textView_black_14">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSize6</item>
+    </style>
+
+    <style name="style_button1">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize5</item>
+        <item name="android:background">@drawable/bg_btn2</item>
+    </style>
+
+    <style name="style_textView1">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">@dimen/textSize5</item>
+    </style>
+
+    <style name="style_textView2">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/black_translucent_7</item>
+        <item name="android:textSize">@dimen/textSize6</item>
+        <item name="android:drawableRight">@drawable/right_arrow</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="style_textView3">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSize6</item>
+        <item name="android:background">@drawable/bg_black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cyan500"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <ImageView
+        android:id="@+id/iv_signUp2_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_et1"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_signUp2_nickName"
+            style="@style/style_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_signUp2_delete1"
+            android:drawableLeft="@drawable/acount"
+            android:drawablePadding="10dp"
+            android:hint="昵称"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <ImageView
+            android:id="@+id/iv_signUp2_delete1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_et1"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_signUp2_setPassword"
+            style="@style/style_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_signUp2_delete2"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="@string/signup_setPassword"
+            android:inputType="textPassword"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
+
+        <ImageView
+            android:id="@+id/iv_signUp2_delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_et1"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_signUp2_checkPassowrd"
+            style="@style/style_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_signUp2_delete3"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="@string/signup_checkPassword"
+            android:inputType="textPassword"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:textColorHint="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_signUp2_delete3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_signUp2_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_btn1"
+        android:text="@string/complete" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <CheckBox
+            android:id="@+id/cb_signUp2_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:text="@string/signup_text1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize8" />
+
+    </FrameLayout>
+
+</LinearLayout>

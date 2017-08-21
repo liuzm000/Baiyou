@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/et_mysign_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:background="@null"
+            android:gravity="left|top"
+            android:textColor="@color/black_translucent_b"
+            android:textSize="@dimen/textSize7" />
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize6"
+            android:text="20"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom|right"
+            android:textColor="@color/black_translucent_7"/>
+    </FrameLayout>
+
+</LinearLayout>

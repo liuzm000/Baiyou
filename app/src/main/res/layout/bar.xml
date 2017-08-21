@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:weightSum="4" >
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/messages"
+        android:gravity="center"
+        android:text="消息"
+        android:drawablePadding="5dp"
+        android:textColor="@color/blue_light" />
+
+    <TextView
+        android:drawablePadding="5dp"
+        android:id="@+id/together"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/jieban"
+        android:gravity="center"
+        android:text="结伴" />
+
+    <TextView
+        android:drawablePadding="5dp"
+        android:id="@+id/main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/gonglue"
+        android:gravity="center"
+        android:text="攻略" />
+
+    <TextView
+        android:id="@+id/me"
+        android:drawablePadding="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/wode"
+        android:gravity="center"
+        android:text="我" />
+
+</LinearLayout>

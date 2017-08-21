@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/root_member_infomation_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/iv_member_infomation_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/root_member_infomation_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickName" />
+
+        <TextView
+            android:id="@+id/tv_member_infomation_nickname"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李爹" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/root_member_infomation_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex" />
+
+        <TextView
+            android:id="@+id/tv_member_infomation_sex"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_member_infomation_mysign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mysign" />
+
+        <TextView
+            android:id="@+id/tv_member_infomation_mysign"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhanwei" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_member_infomation_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location1" />
+
+        <TextView
+            android:id="@+id/tv_member_infomation_location"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhanwei" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/out_plan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize5" />
+
+        <TextView
+            android:id="@+id/tv_group_infomation_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/zhanwei"
+            android:textColor="@color/black_translucent_7"
+            android:textSize="@dimen/textSize6" />
+    </LinearLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_member_infomation_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complaint" />
+
+        <TextView
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

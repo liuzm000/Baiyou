@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize5" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_search_cancel"
+            android:background="@drawable/bg_et1"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/search_text1"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/textSize7" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/search_hot"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/hot_search"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize6" />
+
+    <com.baiyou.widget.WordWrapView
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:id="@+id/wwv_search_tagContainer"
+        android:paddingRight="5dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rect"
+            android:text="旅行攻略" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rect"
+            android:text="防晒" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rect"
+            android:text="租赁服务" />
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rect"
+            android:text="江南古镇" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_rect"
+            android:text="合作" />
+    </com.baiyou.widget.WordWrapView>
+
+</LinearLayout>

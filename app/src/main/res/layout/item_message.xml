@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:id="@+id/root"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_item_message"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/tv_item_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/iv_item_message"
+        android:layout_toRightOf="@+id/iv_item_message"
+        android:text="7月1号在杭州一起玩"
+        android:textColor="@color/black_translucent_b"
+        android:textSize="@dimen/textSize5" />
+
+    <TextView
+        android:id="@+id/tv_item_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_item_message_title"
+        android:layout_alignBottom="@+id/tv_item_message_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="14:06"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize7" />
+
+    <TextView
+        android:id="@+id/tv_item_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_message_title"
+        android:layout_alignStart="@+id/tv_item_message_title"
+        android:layout_below="@+id/tv_item_message_title"
+        android:layout_marginTop="10dp"
+        android:text="你们什么时候到杭州？"
+        android:textColor="@color/black_translucent_7"
+        android:textSize="@dimen/textSize7" />
+
+</RelativeLayout>

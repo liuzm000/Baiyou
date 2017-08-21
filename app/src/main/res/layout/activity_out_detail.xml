@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:text="出行信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et1"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_out_detail_destination"
+                style="@style/style_editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_out_detail_popup"
+                android:drawablePadding="10dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="目的地：浙江"
+                android:textSize="@dimen/textSize5" />
+
+            <ImageView
+                android:id="@+id/iv_out_detail_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et1"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_out_detail_start"
+                style="@style/style_editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_out_detail_calendar1"
+                android:drawablePadding="10dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/startTime"
+                android:textSize="@dimen/textSize5" />
+
+            <ImageView
+                android:id="@+id/iv_out_detail_calendar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/calendar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_et1"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/tv_out_detail_end"
+                style="@style/style_editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_out_detail_calendar2"
+                android:drawablePadding="10dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/endTiem"
+                android:textSize="@dimen/textSize5" />
+
+            <ImageView
+                android:id="@+id/iv_out_detail_calendar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/calendar" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_out_detail_commit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_btn1"
+            android:text="@string/out_text1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/out_text2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize3" />
+
+        <org.library.widget.MyListView
+            android:id="@+id/lv_out_detail_chatGroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </org.library.widget.MyListView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

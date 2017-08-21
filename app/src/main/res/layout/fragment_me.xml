@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_me_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/arrow"
+            android:src="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号" />
+
+        <TextView
+            android:id="@+id/tv_me_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="5465"
+            android:textColor="@color/black_translucent_7" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickName" />
+
+        <TextView
+            android:id="@+id/tv_me_nickname"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李爹" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex" />
+
+        <TextView
+            android:id="@+id/tv_me_sex"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/tv_me_phone"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="545454" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_mysign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mysign" />
+
+        <TextView
+            android:id="@+id/tv_me_mysign"
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="546513265" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_address" />
+
+        <TextView
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_collection" />
+
+        <TextView
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+    <RelativeLayout
+        android:id="@+id/root_me_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp" >
+
+        <TextView
+            style="@style/style_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_setting" />
+
+        <TextView
+            style="@style/style_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View style="@style/style_line" />
+
+</LinearLayout>
